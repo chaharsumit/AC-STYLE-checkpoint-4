@@ -488,7 +488,7 @@ button a{
 .price-card{
   position: relative;
   box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
-  z-index: 100;
+  overflow: hidden;
 }
 
 .price-list{
@@ -514,6 +514,18 @@ button a{
 .active-price .price-header{
   background-color: #ea5433;
   color: #ffffff;
+}
+.advance{
+  width: 10rem;
+  position: absolute;
+  top: 1.4rem;
+  right: -3rem;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 0.6rem;
+  padding: 0.1rem 0 0.1rem 0;
+  background: #ff5821;
+  color: #fff;
 }
 
 /* faqs styles */
@@ -735,6 +747,18 @@ button:hover{
   .service-card:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
+  .advance{
+    width: 10rem;
+    position: absolute;
+    top: 1.2rem;
+    right: -3rem;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 0.6rem;
+    padding: 0.1rem 0 0.1rem 0;
+    background: #ff5821;
+    color: #fff;
+  }
   .portfolio-image-container{
     display: flex;
   }
@@ -786,6 +810,18 @@ button:hover{
   .blog-content .text-md{
     font-size: 1rem;
   }
+  .advance{
+  width: 8.5rem;
+  position: absolute;
+  top: 0.9rem;
+  right: -2.5rem;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 0.6rem;
+  padding: 0.1rem 0 0.1rem 0;
+  background: #ff5821;
+  color: #fff;
+}
 }
 
 @media screen and (min-width : 1366px){
