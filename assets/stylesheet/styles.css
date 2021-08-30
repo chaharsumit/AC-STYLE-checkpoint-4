@@ -354,6 +354,12 @@ button a{
 .dot-desk{
   display: none;
 }
+.desk-image, .mob-image{
+  filter: grayscale(100%);
+}
+.desk-image:hover, .mob-image:hover{
+  filter: grayscale(0%);
+}
 
 /* services */
 
@@ -411,6 +417,9 @@ button a{
   font-size: 0.5rem;
   vertical-align: middle;
 }
+.figcaption:hover{
+  background-color: #f1d3c9d2;
+}
 
 /* testimonial */
 .testimonial{
@@ -459,6 +468,27 @@ button a{
 .portfolio-image{
   width: 100%;
   object-fit: cover;
+}
+.portfolio-figure{
+  position: relative;
+}
+.portfolio-caption{
+  display: none;
+  width: 80%;
+  left: 10%;
+  position: absolute;
+  bottom: 1rem;
+  background-color: #ffffffcb;
+  padding: 1rem;
+}
+.top-caption{
+  text-align: left;
+}
+.bottom-caption i:last-child{
+  margin-left: 1rem;
+}
+.portfolio-figure:hover .portfolio-caption{
+  display: flex;
 }
 
 /* our team styles */
@@ -761,9 +791,6 @@ button:hover{
   }
   .portfolio-image-container{
     display: flex;
-  }
-  .portfolio-image{
-    width: 0%;
   }
   .btn-curved{
     font-size: 1rem;
