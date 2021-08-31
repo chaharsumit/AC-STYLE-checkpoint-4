@@ -200,7 +200,7 @@ button a{
   color: #ffffff;
   display: flex;
   align-items: center;
-  height: 60vh;
+  padding: 16em 0;
 }
 .hero-text{
   font-weight: 600;
@@ -772,7 +772,7 @@ button:hover{
     font-size: 1.2rem;
   }
   .hero{
-    height: 70vh;
+    padding: 13em 0;
   }
   .service-card:nth-last-child(-n+2) {
     margin-bottom: 0;
@@ -860,9 +860,6 @@ button:hover{
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
-  }
-  .hero{
-    height: 75vh;
   }
   .wd-lg-15{
     flex: 0 1 15%;
